@@ -1,0 +1,37 @@
+{
+    "name": "QRME",
+    "version": "1.0.0",
+    "description": "Visual QR code transfer",
+    "main": "./index.js",
+    "module": "./dist/qrme.web.js",
+    "scripts": {
+        "build": "webpack --config webpack.config.js",
+        "test": "mocha",
+        "watch": "webpack --config webpack.config.js --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ovanwijk/qrme.git"
+    },
+    "author": "Olaf van Wijk",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ovanwijk/qrme/issues"
+    },
+    "homepage": "https://github.com/ovanwijk/qrme#readme",
+    "dependencies": {
+        "crypto-js": "^3.1.9-1",
+        "babel": "^6.23.0",
+        "babel-polyfill": "^6.26.0"
+    },
+    "devDependencies": {
+        "mocha": "^5.2.0",
+        "webpack": "^4.20.2",
+        "webpack-cli": "^3.1.1",
+        "babel-eslint": "^8.2.6",
+        "babel-loader": "^7.1.5",
+        "babel-register": "^6.26.0",
+        "eslint": "^4.19.1",
+        "eslint-loader": "^2.1.0"
+    }
+}
