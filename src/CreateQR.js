@@ -12,7 +12,7 @@ var qrTransferDefaultSettings = {
     filename: "qrtransfer",
     window_stay_open: 0, //0=close, !=0 == stay open
     qrsize: 256, //must factor of 2
-    ipfs_location: "QmXLmVTka5YHJpX7vomGEUrhZGDMQXz2RSBNVGinuaXHf2"
+    ipfs_location: "QmVGxqjBwPLzuB3R3jJbD9v8sFgajEHpkK47jA47QVt4HJ"
 }
 
 export function unencryptedTransferQR(textValue, options = {}){
