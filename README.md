@@ -6,7 +6,7 @@ based page to react on the visual transfer of QR codes. You are yourself respons
 
 To support the project please help pinning the exposed app on your IPFS node:
 
-    ipfs pin QmVGxqjBwPLzuB3R3jJbD9v8sFgajEHpkK47jA47QVt4HJ
+    ipfs pin QmeyUe1AU959U2xEWYQtgK196Ercree3o4ao4VVNfFawDp
 
 
 ## How to use

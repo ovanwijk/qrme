@@ -12,7 +12,7 @@ var qrTransferDefaultSettings = {
     filename: "qrtransfer",
     window_stay_open: 0, //0=close, !=0 == stay open
     qrsize: 256, //must factor of 2
-    ipfs_location: "QmVGxqjBwPLzuB3R3jJbD9v8sFgajEHpkK47jA47QVt4HJ"
+    ipfs_location: "QmeyUe1AU959U2xEWYQtgK196Ercree3o4ao4VVNfFawDp"
 }
 
 export function unencryptedTransferQR(textValue, options = {}){
@@ -35,7 +35,7 @@ export function encryptedTransferQR(textValue, randomSet, options = {}){
     var toReturn =  JSON.stringify({
       e: true,    
       b: encrypted_value,
-      s: SHA256(randomSet.random_value).toString()
+      s: SHA256(randomSet.random_value).toString().substr(60)
     }); 
     var filename = options.filename || qrTransferDefaultSettings.filename;
     var window_stay_open = options.window_stay_open || qrTransferDefaultSettings.window_stay_open;
