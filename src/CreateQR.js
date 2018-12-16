@@ -51,7 +51,7 @@ export function encryptedTransferQR(textValue, randomSet, options = {}){
     var window_stay_open = options.window_stay_open || qrTransferDefaultSettings.window_stay_open;
     var qrsize = options.qrsize || qrTransferDefaultSettings.qrsize;
     var ipfs_location = qrTransferDefaultSettings.ipfs_location;
-    return "https://ipfs.io/ipfs/" +
+    return ipfs_node +
         ipfs_location + "/#/qr/" +
         filename + "/" + qrsize + "/" +
         window_stay_open + "/"+ encodeURIComponent(toReturn);
