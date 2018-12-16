@@ -1,6 +1,6 @@
 {
     "name": "QRME",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Visual QR code transfer",
     "main": "./index.js",
     "module": "./dist/qrme.web.js",
