@@ -8,12 +8,20 @@ import {SHA256, AES, enc} from 'crypto-js';
  * c=checksumvalue
  */
 
-export var qrTransferDefaultSettings = {
+var qrTransferDefaultSettings = {
     filename: "qrtransfer",
     window_stay_open: 0, //0=close, !=0 == stay open
     qrsize: 256, //must factor of 2
     ipfs_location: "QmeyUe1AU959U2xEWYQtgK196Ercree3o4ao4VVNfFawDp",
     ipfs_node: "https://ipfs.io/ipfs/"
+}
+
+export function setConfig(newConfig = {}){
+    Object.assign(qrTransferDefaultSettings, newConfig);
+}
+
+export function getConfig(){
+    return qrTransferDefaultSettings;
 }
 
 export function unencryptedTransferQR(textValue, options = {}){
